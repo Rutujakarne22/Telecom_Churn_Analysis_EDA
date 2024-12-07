@@ -1,8 +1,10 @@
 # Telecom-Churn-Analysis-Project
-Objective
+Objective: 
+
 To identify the underlying factors contributing to customer churn, quantify their impact, and provide actionable insights to help the telecom company improve customer retention rates and enhance service quality.
 
 Key Findings:
+
 1.Churn Rate:
 26.5% of customers have churned. Senior citizens exhibit a 15-20% higher churn rate.
 
