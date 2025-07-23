@@ -45,24 +45,35 @@ Many telecom companies struggle with high churn rates but lack clarity on what f
 
 ---
 
-## Model Performance Summary
+## 🤖 Model Performance Summary
 
 | Model               | Accuracy | Recall (Churn - Yes) | Notes                               |
 |---------------------|----------|----------------------|--------------------------------------|
-| Logistic Regression | 78.85%   | 51%                  | Good overall accuracy, weak on churn class |
-| Random Forest       | 78.56%   | 49%                  | Similar accuracy, slightly lower recall |
+| Logistic Regression | 78.85%   | 51%                  | Higher recall for churn class        |
+| Random Forest       | 78.56%   | 49%                  | Slightly lower recall, but more interpretable via feature importance |
 
-> Both models show class imbalance issues — recall for churn class is low, indicating room for improvement via class balancing or advanced models.
+> **Best Model:** Logistic Regression performed slightly better in terms of identifying churned customers (higher recall). Since the goal is to **detect churn risk early**, recall on the churn class is critical — making Logistic Regression more suitable for this task.
 
 ---
 
-## Conclusion & Recommendation
+## Conclusion 
+
+- Both models performed similarly in overall accuracy (~78%), but **Logistic Regression had better recall for churned customers (51%)**, which is crucial in churn prediction tasks.
+- **Random Forest** provided valuable feature importance insights, helping identify the top churn drivers.
+- Based on the business need to **minimize false negatives (missed churners)**, **Logistic Regression is preferred** for deployment.
+
+
+---
+
+### Recommendations:
 
 - The analysis shows that **cost-related features** (MonthlyCharges, TotalCharges) and **contract length** are major drivers of churn.
 - To reduce churn, telecom companies should:
   - Offer **discounts** or **rewards** for long-term contracts.
   - Target high-risk users with **personalized retention strategies**.
   - Improve customer experience, especially for users with **high bills** and **short tenure**.
-  
+  - Offer contract upgrade incentives and better onboarding to increase tenure and reduce churn.
+  - Improve service features like OnlineSecurity and PaymentMethod support.
+
 
 
