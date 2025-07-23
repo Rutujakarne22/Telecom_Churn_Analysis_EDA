@@ -45,14 +45,14 @@ Many telecom companies struggle with high churn rates but lack clarity on what f
 
 ---
 
-## 🤖 Model Performance Summary
+## Model Performance Summary
 
 | Model               | Accuracy | Recall (Churn - Yes) | Notes                               |
 |---------------------|----------|----------------------|--------------------------------------|
 | Logistic Regression | 78.85%   | 51%                  | Higher recall for churn class        |
 | Random Forest       | 78.56%   | 49%                  | Slightly lower recall, but more interpretable via feature importance |
 
-> **Best Model:** Logistic Regression performed slightly better in terms of identifying churned customers (higher recall). Since the goal is to **detect churn risk early**, recall on the churn class is critical — making Logistic Regression more suitable for this task.
+**Best Model:** Logistic Regression performed slightly better in terms of identifying churned customers (higher recall). Since the goal is to **detect churn risk early**, recall on the churn class is critical — making Logistic Regression more suitable for this task.
 
 ---
 
